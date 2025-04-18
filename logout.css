@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+/* Body Styling */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("img/miain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* Profile Section Styling */
+#profile-section, #logout-confirmation {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+/* Logout Button Styling */
+#logout-button {
+    background: #f44336;
+    margin-top: 1rem;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+#logout-button:hover {
+    background: #e53935;
+}
+
+/* Logout Confirmation Styles */
+#logout-confirmation input {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-bottom: 1rem;
+}
+
+#logout-confirmation button {
+    background: #4CAF50;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 5rem;
+    margin-bottom: 1rem;
+}
+
+#cancel-logout {
+    background: #ccc;
+    color: black;
+}
+
+#cancel-logout:hover {
+    background-color: #bbb;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 550px) {
+    #profile-section, #logout-confirmation {
+        padding: 2rem;
+    }
+    input, button {
+        width: 100%;
+    }
+}

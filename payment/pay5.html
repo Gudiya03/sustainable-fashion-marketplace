@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment - FASHION</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="../img/Screenshot 2024-10-25 180232.png" width="160" height="50" alt="Fashion Logo">
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section payment">
+      <div class="container">
+        <h2 class="h2 section-title">Payment Details</h2>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+          <p>Subtotal: ₹1999.85
+          </p>
+          <p>Shipping: ₹50.00</p>
+          <p><strong>Total: ₹2049.85</strong></p>
+        </div>
+
+        <!-- Payment Form -->
+        <form action="../PHP/process_payment.php" method="POST" class="payment-form">
+          <h3>Billing Details</h3>
+
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" required>
+
+          <h3>Payment Information</h3>
+           
+          <img src="../assets/images/paymwnt.jpg" alt="Scanner" style="height: 420px; width: 350px; display: flex; justify-content: center; align-items: center; margin-left: 30%;">
+          <button type="submit" class="btn btn-primary"> <a href="http://localhost/Sustainable%20Fashion%20Marketplace/PHP/ssucces.php">Pay Now </a></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Fashion Store. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("pay-btn").onclick = function () {
+        var options = {
+            "key": "YOUR_RAZORPAY_KEY",
+            "amount": 42170, // Amount in paise (₹421.70)
+            "currency": "INR",
+            "name": "Fashion Store",
+            "description": "Order Payment",
+            "handler": function (response) {
+                alert("Payment Successful! ID: " + response.razorpay_payment_id);
+                window.location.href = "http://localhost/Sustainable%20Fashion%20Marketplace/PHP/ssucces.php";
+            }
+        };
+        var rzp1 = new Razorpay(options);
+        rzp1.open();
+    };
+    </script>
+    
+
+</body>
+</html>

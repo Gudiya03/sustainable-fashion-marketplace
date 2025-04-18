@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+}
+
+body {
+  /* min-height: 100vh; */
+  margin: 0;
+  padding: 0;
+  background: url("miain.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+
+/* NEW CONTAINER */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+/* FORM STYLES */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background: rgba(0, 0, 0, 0.607);
+  backdrop-filter: blur(3px);
+  border-radius: 2rem;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* FORM TITLE */
+form h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* LABELS */
+label {
+  font-size: 18px;
+}
+
+/* INPUT WRAPPER */
+form div div {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+/* ICONS */
+form i {
+  margin-right: 1rem;
+  font-size: 20px;
+}
+
+/* INPUT FIELDS */
+input {
+  all: unset;
+  transition: 0.2s ease-in-out;
+  font-size: 17px;
+  width: 100%;
+}
+
+/* BUTTON & INPUT SIZE */
+input,
+button {
+  height: 50px;
+  margin-top: 0.2rem;
+}
+
+/* BUTTON STYLE */
+button {
+  background: #ff884d;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 550px) {
+  form {
+    padding: 2rem 1.5rem;
+  }
+
+  input,
+  button {
+    width: 100%;
+  }
+
+  form h1 {
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+}

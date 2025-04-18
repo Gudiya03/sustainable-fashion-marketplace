@@ -1,0 +1,183 @@
+/* ==== Global Styles ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* ==== Header ==== */
+  .header {
+    background: #9f46ce;
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  .header .logo img {
+    max-width: 160px;
+  }
+  
+  /* ==== Main Container ==== */
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* ==== Cart Section ==== */
+  .section {
+    background: #fff;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(239, 162, 232, 0.1);
+  }
+  
+  .h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* ==== Cart Items ==== */
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .cart-item-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .cart-item-details {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .cart-item-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .cart-item-price {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .cart-item-quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .quantity-btn {
+    background: #ddd;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .quantity-input {
+    width: 40px;
+    text-align: center;
+    margin: 0 5px;
+  }
+  
+  /* ==== Order Summary ==== */
+  .cart-summary {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .summary-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .summary-details p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .checkout-btn {
+    display: block;
+    width: 100%;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  
+  .checkout-btn:hover {
+    background: #0056b3;
+  }
+  
+  /* ==== Payment Form ==== */
+  .payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .payment-form label {
+    font-weight: bold;
+  }
+  
+  .payment-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .payment-form .btn-primary {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .payment-form .btn-primary:hover {
+    background: #218838;
+  }
+  
+  /* ==== Footer ==== */
+  .footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+  }
+  
